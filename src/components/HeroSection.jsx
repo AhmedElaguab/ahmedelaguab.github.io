@@ -2,16 +2,16 @@ import Logo from './utils/Logo'
 
 export default function HeroSection() {
   return (
-    <header className="py-40">
+    <header className="py-12 sm:py-40">
       <div className="container">
         <nav>
           <Logo />
         </nav>
-        <h1 className="text-4xl mt-20 font-medium leading-normal">
+        <h1 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium">
           Hey there, my name's ahmed, and I'm a Frontend Developer, I speak
           JavaScript and React.
         </h1>
-        <p className="mt-10 text-slate-600">
+        <p className="mt-8 sm:mt-10 text-slate-600">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
           eius numquam, assumenda temporibus impedit iste maxime ducimus fugiat
           perferendis, soluta adipisci doloremque quasi tempore ipsam deserunt

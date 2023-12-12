@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-100 text-slate-900 text-xl;
+  @apply bg-slate-100 text-slate-900 text-lg sm:text-xl;
 }
 
 .button {
-  @apply bg-slate-900 text-white py-2 px-10 inline-block text-lg rounded hover:bg-slate-950;
+  @apply bg-slate-900 text-white py-2 px-10 inline-block text-base sm:text-lg rounded hover:bg-slate-950;
 }
