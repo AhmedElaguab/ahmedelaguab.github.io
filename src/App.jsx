@@ -1,7 +1,9 @@
+import HeroSection from './components/HeroSection'
+
 function App() {
   return (
     <div>
-      <div className="container">portfolio</div>
+      <HeroSection />
     </div>
   )
 }
