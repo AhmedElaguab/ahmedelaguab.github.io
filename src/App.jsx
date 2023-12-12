@@ -1,5 +1,9 @@
 function App() {
-  return <div>portfolio</div>
+  return (
+    <div>
+      <div className="container">portfolio</div>
+    </div>
+  )
 }
 
 export default App

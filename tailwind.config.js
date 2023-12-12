@@ -6,6 +6,16 @@ export default {
       fontFamily: {
         sans: ['Poppins'],
       },
+      container: {
+        center: true,
+        screens: {
+          sm: '600px',
+          md: '728px',
+          lg: '728px',
+          xl: '728px',
+          '2xl': '728px',
+        },
+      },
     },
   },
   plugins: [],
