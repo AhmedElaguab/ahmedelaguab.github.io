@@ -2,7 +2,7 @@ import Logo from './utils/Logo'
 
 export default function HeroSection() {
   return (
-    <header className="py-12 sm:py-40">
+    <header className="py-12 sm:pt-40 sm:pb-24">
       <div className="container">
         <nav>
           <Logo />
