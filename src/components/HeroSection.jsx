@@ -9,11 +9,16 @@ export default function HeroSection() {
         <nav>
           <Logo />
         </nav>
-        <h1 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium sm:leading-snug">
-          Hey there, my name's ahmed, and I'm a Frontend Developer, I speak
-          JavaScript and React.
+        <h1 className="mt-12 md:mt-16 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter  md:leading-[1.1]">
+          Hey there, my name's ahmed
+          {/* <br className="hidden sm:inline" /> */}
+          <br />
+          and I'm a Frontend Developer,
+          <br />
+          {/* <br className="hidden sm:inline" /> */}I speak JavaScript and
+          React.
         </h1>
-        <p className="mt-8 sm:mt-10 text-slate-600">
+        <p className="mt-8 sm:mt-10 text-slate-700">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
           eius numquam, assumenda temporibus impedit iste maxime ducimus fugiat
           perferendis, soluta adipisci doloremque quasi tempore ipsam deserunt

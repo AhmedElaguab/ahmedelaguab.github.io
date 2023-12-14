@@ -7,14 +7,14 @@ export default function ProjectSection() {
   return (
     <section>
       <div className="container">
-        <h3 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium">
+        <h3 className="mt-10 md:mt-12 text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tighter  md:leading-[1.1]">
           My Projects
         </h3>
         <div className="mt-10">
           <div className="sm:grid sm:grid-cols-2  sm:gap-3">
             {PROJECTS.map(project => (
               <div
-                className=" bg-gray-50 border border-gray-300 rounded-md shadow-sm mb-4 sm:mb-0"
+                className=" bg-gray-50 border border-gray-300 hover:border-gray-400/60 rounded-md shadow-sm mb-4 sm:mb-0"
                 key={project.id}
               >
                 <div className="overflow-hidden">
@@ -33,7 +33,7 @@ export default function ProjectSection() {
                     <a
                       target="_blank"
                       href={project.github}
-                      className="button !px-0 !flex-grow text-center !bg-gray-100 !border !border-gray-400 hover:!border-gray-600 !text-slate-900 !text-sm font-medium mr-2"
+                      className="button !px-0 !flex-grow text-center !bg-gray-100 hover:!bg-gray-200/60 !border !border-gray-400 hover:!border-gray-500 !text-slate-900 !text-sm font-medium mr-2"
                     >
                       <FontAwesomeIcon
                         className="mr-2"

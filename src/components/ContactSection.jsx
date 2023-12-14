@@ -9,7 +9,9 @@ export default function ContactSection() {
   return (
     <section className="py-28" id="contact">
       <div className="container">
-        <h3 className="text-3xl sm:text-4xl font-medium">Contact me</h3>
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tighter  md:leading-[1.1]">
+          Contact Me
+        </h3>
         <p className="mt-10 text-slate-700">
           Please reach out over email{' '}
           <a href="mailto:elaguabahmed97@gmail.com">elaguabahmed97@gmail.com</a>{' '}
