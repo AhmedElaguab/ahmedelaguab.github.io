@@ -1,4 +1,7 @@
 import { PROJECTS } from './../projects.data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function ProjectSection() {
   return (
@@ -30,8 +33,13 @@ export default function ProjectSection() {
                     <a
                       target="_blank"
                       href={project.github}
-                      className="button !px-0 !flex-grow text-center !bg-gray-100 !border !border-gray-400 !text-slate-900 !text-sm font-medium mr-2"
+                      className="button !px-0 !flex-grow text-center !bg-gray-100 !border !border-gray-400 hover:!border-gray-600 !text-slate-900 !text-sm font-medium mr-2"
                     >
+                      <FontAwesomeIcon
+                        className="mr-2"
+                        size="lg"
+                        icon={faGithub}
+                      />
                       Github
                     </a>
                     <a
@@ -39,6 +47,11 @@ export default function ProjectSection() {
                       href={project.preview}
                       className="button !px-0 !flex-grow text-center !border !border-slate-950  !text-sm font-medium"
                     >
+                      <FontAwesomeIcon
+                        className="mr-2"
+                        size="sm"
+                        icon={faArrowUpRightFromSquare}
+                      />
                       Preview
                     </a>
                   </div>

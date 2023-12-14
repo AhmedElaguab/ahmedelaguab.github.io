@@ -1,4 +1,6 @@
 import Logo from './utils/Logo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function HeroSection() {
   return (
@@ -17,8 +19,9 @@ export default function HeroSection() {
           perferendis, soluta adipisci doloremque quasi tempore ipsam deserunt
           dolorem, inventore recusandae possimus.
         </p>
-        <a className="button mt-10" href="#">
-          Contact
+        <a className="button mt-10 flex items-center" href="#contact">
+          <span>Contact</span>
+          <FontAwesomeIcon className="ml-3" size="sm" icon={faArrowRight} />
         </a>
       </div>
     </header>
