@@ -7,7 +7,7 @@ export default function HeroSection() {
         <nav>
           <Logo />
         </nav>
-        <h1 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium">
+        <h1 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium sm:leading-snug">
           Hey there, my name's ahmed, and I'm a Frontend Developer, I speak
           JavaScript and React.
         </h1>
