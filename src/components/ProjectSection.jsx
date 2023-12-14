@@ -2,7 +2,7 @@ import { PROJECTS } from './../projects.data'
 
 export default function ProjectSection() {
   return (
-    <main>
+    <section>
       <div className="container">
         <h3 className="text-3xl sm:text-4xl mt-12 sm:mt-20 font-medium">
           My Projects
@@ -48,6 +48,6 @@ export default function ProjectSection() {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   )
 }

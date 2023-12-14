@@ -1,11 +1,15 @@
 import HeroSection from './components/HeroSection'
 import ProjectSection from './components/ProjectSection'
+import ContactSection from './components/ContactSection'
 
 function App() {
   return (
     <div>
       <HeroSection />
-      <ProjectSection />
+      <main>
+        <ProjectSection />
+        <ContactSection />
+      </main>
     </div>
   )
 }
