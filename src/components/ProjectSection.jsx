@@ -14,7 +14,7 @@ export default function ProjectSection() {
           <div className="sm:grid sm:grid-cols-2  sm:gap-3">
             {PROJECTS.map(project => (
               <div
-                className=" bg-gray-50 border border-gray-300 hover:border-gray-400/60 rounded-md shadow-sm mb-4 sm:mb-0"
+                className="hover:-translate-y-px bg-gray-50 border border-gray-300 hover:border-gray-400/60 rounded-md shadow-sm mb-4 sm:mb-0"
                 key={project.id}
               >
                 <div className="overflow-hidden">
