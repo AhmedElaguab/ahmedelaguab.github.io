@@ -15,7 +15,7 @@ export default function ProjectSection() {
             {PROJECTS.map(project => (
               <div
                 className="hover:-translate-y-px bg-gray-50 border border-gray-300 hover:border-gray-400/60 rounded-md shadow-sm mb-4 sm:mb-0"
-                key={project.id}
+                key={project.name}
               >
                 <div className="overflow-hidden">
                   <img
