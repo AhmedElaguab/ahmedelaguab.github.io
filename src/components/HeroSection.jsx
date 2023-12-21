@@ -1,13 +1,41 @@
+import { useState, useEffect } from 'react'
+
 import Logo from './utils/Logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons'
 
 export default function HeroSection() {
+  const [theme, setTheme] = useState(() => {
+    const theme = localStorage.getItem('theme') || 'light'
+    return theme
+  })
+
+  function handleThemeChange() {
+    const nextTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(nextTheme)
+    localStorage.setItem('theme', nextTheme)
+  }
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [theme])
+
   return (
     <header className="py-12 sm:pt-40 sm:pb-24">
       <div className="container">
-        <nav>
+        <nav className="flex justify-between items-center">
           <Logo />
+          <button className="w-12 h-12" onClick={handleThemeChange}>
+            <FontAwesomeIcon
+              size="xl"
+              icon={theme === 'light' ? faMoon : faSun}
+            />
+          </button>
         </nav>
         <h1 className="mt-12 md:mt-16 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter  md:leading-[1.1]">
           Hey there, my name's ahmed
