@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-100 text-slate-900 text-lg tracking-tight md:text-xl;
+  @apply bg-slate-50 text-slate-800 text-lg tracking-tight md:text-xl;
   @apply dark:bg-slate-900 dark:text-slate-200;
 }
 
 .button {
-  @apply bg-slate-900 text-white py-2 px-10 inline-block text-base sm:text-lg rounded hover:bg-slate-800;
+  @apply bg-indigo-600 hover:bg-indigo-600/95 text-slate-200 font-medium py-2 px-10 inline-block text-base sm:text-lg rounded;
 }
