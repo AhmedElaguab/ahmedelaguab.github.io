@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { annotate, annotationGroup } from 'rough-notation'
 
 import Logo from './utils/Logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,6 +11,7 @@ export default function HeroSection() {
     const theme = localStorage.getItem('theme') || 'light'
     return theme
   })
+  const titleRef = useRef([])
 
   function handleThemeChange() {
     const nextTheme = theme === 'light' ? 'dark' : 'light'
@@ -25,6 +27,14 @@ export default function HeroSection() {
     }
   }, [theme])
 
+  useEffect(() => {
+    annotationGroup(
+      titleRef.current.map(el =>
+        annotate(el, { type: 'underline', padding: [-8, 5] }),
+      ),
+    ).show()
+  }, [])
+
   return (
     <header className="py-12 sm:pt-40 sm:pb-24">
       <div className="container">
@@ -38,9 +48,15 @@ export default function HeroSection() {
           </button>
         </nav>
         <h1 className="text-primary mt-12 md:mt-16 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter  md:leading-[1.1]">
-          Hey there, my name's ahmed
-          <br /> and I'm a Frontend Developer,
-          <br /> I speak JavaScript and React.
+          Hey there, my name's{' '}
+          <span ref={el => titleRef.current.push(el)}>Ahmed</span>
+          <br /> and I'm a{' '}
+          <span ref={el => titleRef.current.push(el)}>Frontend Developer</span>,
+          <br /> I speak{' '}
+          <span ref={el => titleRef.current.push(el)}>
+            JavaScript and React
+          </span>
+          .
         </h1>
         <p className="mt-8 sm:mt-10 text-slate-600 dark:text-slate-400">
           I specialize in crafting seamless user experiences through the mastery
