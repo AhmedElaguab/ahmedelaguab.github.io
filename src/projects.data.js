@@ -1,3 +1,10 @@
+import arcadeGameScreenShot from './images/arcade-game.jpg'
+import matchingGameScreenShot from './images/matching-game.jpg'
+import portfolioWebsiteScreenShot from './images/portfolio-site.jpg'
+import insureScreenShot from './images/insure.jpg'
+import socialMediaDashboardScreenShot from './images/social-media-dashboard.jpg'
+import statsPreviewCardScreenShot from './images/stats-preview-card.jpg'
+
 export const PROJECTS = [
   {
     name: 'Insure',
@@ -5,8 +12,7 @@ export const PROJECTS = [
     preview: 'https://ahmedelaguab.github.io/insure-landing-page/',
     desc: 'A responsive landing page.',
     language: 'HTML',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/insure-landing-page/master/design/desktop-preview.jpg',
+    screenshot: insureScreenShot,
   },
   {
     name: 'Social Media Dashboard',
@@ -16,8 +22,7 @@ export const PROJECTS = [
       'https://ahmedelaguab.github.io/social-media-dashboard-with-theme-switcher/',
     desc: 'Social media dashboard with theme switcher',
     language: 'HTML',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/social-media-dashboard-with-theme-switcher/master/design/desktop-preview.jpg',
+    screenshot: socialMediaDashboardScreenShot,
   },
   {
     name: 'Portfolio Website',
@@ -25,8 +30,7 @@ export const PROJECTS = [
     preview: 'https://ahmedelaguab.github.io/portfolio-site/',
     desc: 'A full responsive portfolio website built with Bootstrap.',
     language: 'HTML',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/stats-preview-card-component/main/design/desktop-preview.jpg',
+    screenshot: portfolioWebsiteScreenShot,
   },
   {
     name: 'Arcade Game',
@@ -35,8 +39,7 @@ export const PROJECTS = [
     preview: 'https://ahmedelaguab.github.io/arcade-game/',
     desc: 'A Classic Arcade Game.',
     language: 'JavaScript',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/insure-landing-page/master/design/desktop-preview.jpg',
+    screenshot: arcadeGameScreenShot,
   },
   {
     name: 'Memory Game',
@@ -44,8 +47,7 @@ export const PROJECTS = [
     preview: 'https://ahmedelaguab.github.io/memory-game/',
     desc: 'A Classic Memory Game',
     language: 'JavaScript',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/social-media-dashboard-with-theme-switcher/master/design/desktop-preview.jpg',
+    screenshot: matchingGameScreenShot,
   },
   {
     name: 'Stats Preview Card Component',
@@ -53,7 +55,6 @@ export const PROJECTS = [
     preview: 'https://ae-stats-preview-card-component.vercel.app/',
     desc: 'A stats preview card component for react.',
     language: 'React',
-    screenshot:
-      'https://raw.githubusercontent.com/AhmedElaguab/stats-preview-card-component/main/design/desktop-preview.jpg',
+    screenshot: statsPreviewCardScreenShot,
   },
 ]
