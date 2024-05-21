@@ -1,11 +1,19 @@
-import arcadeGameScreenShot from './images/arcade-game.jpg'
-import matchingGameScreenShot from './images/matching-game.jpg'
-import portfolioWebsiteScreenShot from './images/portfolio-site.jpg'
-import insureScreenShot from './images/insure.jpg'
-import socialMediaDashboardScreenShot from './images/social-media-dashboard.jpg'
-import statsPreviewCardScreenShot from './images/stats-preview-card.jpg'
+import arcadeGameScreenShot from './images/arcade-game.jpg';
+import matchingGameScreenShot from './images/matching-game.jpg';
+import insureScreenShot from './images/insure.jpg';
+import socialMediaDashboardScreenShot from './images/social-media-dashboard.jpg';
+import statsPreviewCardScreenShot from './images/stats-preview-card.jpg';
+import manageScreenShot from './images/manage.jpg';
 
 export const PROJECTS = [
+  {
+    name: 'Manage',
+    github: 'https://github.com/AhmedElaguab/react-landing-page-manage',
+    preview: 'https://ahmedelaguab.github.io/react-landing-page-manage/',
+    desc: 'A landing page.',
+    language: 'HTML',
+    screenshot: manageScreenShot,
+  },
   {
     name: 'Insure',
     github: 'https://github.com/AhmedElaguab/insure-landing-page',
@@ -23,14 +31,6 @@ export const PROJECTS = [
     desc: 'Social media dashboard with theme switcher',
     language: 'HTML',
     screenshot: socialMediaDashboardScreenShot,
-  },
-  {
-    name: 'Portfolio Website',
-    github: 'https://github.com/AhmedElaguab/portfolio-site',
-    preview: 'https://ahmedelaguab.github.io/portfolio-site/',
-    desc: 'A full responsive portfolio website built with Bootstrap.',
-    language: 'HTML',
-    screenshot: portfolioWebsiteScreenShot,
   },
   {
     name: 'Arcade Game',
@@ -57,4 +57,4 @@ export const PROJECTS = [
     language: 'React',
     screenshot: statsPreviewCardScreenShot,
   },
-]
+];
